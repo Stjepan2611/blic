@@ -4,7 +4,26 @@
     <router-link to="/about">About</router-link>
   </nav>
   <router-view/>
+
+  <div>
+    <h1>Knjige</h1>
+    <ListaKnjiga />
+  </div>
 </template>
+
+<script>
+
+import ListaKnjiga from './components/ListaKnjiga.vue';
+
+export default {
+  name: "App",
+  components: {
+    ListaKnjiga
+   
+  }
+};
+</script>
+
 
 <style lang="scss">
 #app {

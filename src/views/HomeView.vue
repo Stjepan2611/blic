@@ -15,4 +15,14 @@ export default {
     HelloWorld
   }
 }
+
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://www.anapioficeandfire.com/api/books", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
 </script>
